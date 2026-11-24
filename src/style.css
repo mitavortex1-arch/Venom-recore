@@ -1,0 +1,426 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&family=Rajdhani:wght@400;500;600;700&display=swap');
+
+:root {
+  font-family: 'Rajdhani', sans-serif;
+  background: #07070d;
+  color: #f2efff;
+  font-synthesis: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background:
+    radial-gradient(ellipse at 50% 0%, #28143c 0%, transparent 48%),
+    #07070d;
+}
+
+.recore {
+  max-width: 1450px;
+  margin: auto;
+  padding: 35px 6%;
+}
+
+.topbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #39234c;
+  padding-bottom: 22px;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.brand-icon {
+  width: 48px;
+  height: 48px;
+  display: grid;
+  place-items: center;
+  background: #b55aff;
+  color: #10091a;
+  font-family: Orbitron;
+  font-size: 27px;
+  font-weight: 900;
+  clip-path: polygon(50% 0, 100% 100%, 0 100%);
+  padding-top: 10px;
+}
+
+.brand h2 {
+  font-family: Orbitron;
+  font-size: 14px;
+  letter-spacing: 2px;
+  margin: 0;
+}
+
+.brand h2 span {
+  color: #c17aff;
+}
+
+.brand small,
+.hero-meta,
+.metric small,
+footer small {
+  color: #88799d;
+  letter-spacing: 2px;
+}
+
+.brand small {
+  font-size: 10px;
+}
+
+.status {
+  font-family: Orbitron;
+  font-size: 10px;
+  letter-spacing: 2px;
+  color: #63f0bd;
+}
+
+.pulse,
+.node-dot {
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  background: #63f0bd;
+  border-radius: 50%;
+  box-shadow: 0 0 12px #63f0bd;
+  margin-right: 8px;
+}
+
+.hero {
+  text-align: center;
+  padding: 100px 0 85px;
+}
+
+.eyebrow {
+  color: #c17aff;
+  font-size: 11px;
+  letter-spacing: 3px;
+}
+
+.hero h1 {
+  font-family: Orbitron;
+  font-size: clamp(65px, 15vw, 155px);
+  font-weight: 900;
+  letter-spacing: 5px;
+  margin: 30px 0 15px;
+  text-shadow: 0 0 45px #a33dff66;
+}
+
+.hero h1 span {
+  color: #d17bff;
+}
+
+.hero h2 {
+  font-family: Orbitron;
+  font-size: clamp(12px, 2vw, 19px);
+  letter-spacing: 2px;
+}
+
+.hero p {
+  color: #a597b7;
+  font-size: 19px;
+  letter-spacing: 2px;
+}
+
+.hero-line {
+  width: 180px;
+  height: 2px;
+  margin: 40px auto;
+  background: #c17aff;
+  box-shadow: 0 0 20px #c17aff;
+}
+
+.hero-meta {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+  font-size: 10px;
+}
+
+.section {
+  margin: 70px 0;
+}
+
+.section-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+  margin-bottom: 25px;
+  gap: 20px;
+}
+
+.section-heading small {
+  color: #c17aff;
+  letter-spacing: 2px;
+  font-size: 10px;
+}
+
+.section-heading h2 {
+  font-family: Orbitron;
+  font-size: 21px;
+  letter-spacing: 3px;
+  margin: 10px 0 0;
+}
+
+.live {
+  font-size: 10px;
+  color: #63f0bd;
+  letter-spacing: 2px;
+}
+
+.metrics {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 15px;
+}
+
+.metric,
+.division,
+.workflow-step {
+  background: linear-gradient(145deg, #191126, #0d0b14);
+  border: 1px solid #39264b;
+  padding: 25px;
+  transition: .3s ease;
+}
+
+.metric:hover,
+.division:hover,
+.workflow-step:hover {
+  border-color: #c17aff;
+  transform: translateY(-4px);
+  box-shadow: 0 10px 30px #a33dff16;
+}
+
+.metric small {
+  font-size: 10px;
+}
+
+.metric-value {
+  font-family: Orbitron;
+  font-size: 32px;
+  color: #c17aff;
+  margin: 25px 0;
+}
+
+.bar {
+  height: 4px;
+  background: #30233b;
+  overflow: hidden;
+}
+
+.bar div {
+  height: 100%;
+  background: linear-gradient(90deg, #7432b5, #d17bff);
+  box-shadow: 0 0 12px #c17aff;
+}
+
+.metric .metric-foot {
+  display: block;
+  margin-top: 17px;
+  font-size: 9px;
+}
+
+.divisions {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+}
+
+.division {
+  min-height: 240px;
+  position: relative;
+  overflow: hidden;
+}
+
+.division-top {
+  display: flex;
+  justify-content: space-between;
+  color: #c17aff;
+  font-family: Orbitron;
+  font-size: 13px;
+}
+
+.division-indicator {
+  color: #63f0bd;
+  font-size: 10px;
+}
+
+.division h3 {
+  font-family: Orbitron;
+  font-size: 19px;
+  letter-spacing: 1px;
+  margin: 30px 0 5px;
+}
+
+.division > small {
+  color: #c17aff;
+  font-size: 10px;
+  letter-spacing: 2px;
+}
+
+.division p {
+  color: #a597b7;
+  font-size: 15px;
+  line-height: 1.5;
+}
+
+.division-line {
+  height: 2px;
+  width: 35%;
+  background: #c17aff;
+  margin-top: 22px;
+}
+
+.workflow {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+}
+
+.workflow-step {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.step-number {
+  font-family: Orbitron;
+  color: #c17aff;
+  font-size: 14px;
+}
+
+.workflow-step p {
+  font-size: 12px;
+  letter-spacing: 1px;
+  flex: 1;
+}
+
+.step-mark {
+  color: #63f0bd;
+  font-size: 11px;
+}
+
+.network {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.node {
+  flex: 1 1 130px;
+  background: #171020;
+  border: 1px solid #49305d;
+  padding: 20px;
+  font-family: Orbitron;
+  font-size: 10px;
+  letter-spacing: 1px;
+}
+
+.node-dot {
+  background: #c17aff;
+  box-shadow: 0 0 10px #c17aff;
+  width: 6px;
+  height: 6px;
+}
+
+.closing {
+  text-align: center;
+  padding: 70px 15px;
+  margin-top: 90px;
+  border: 1px solid #39264b;
+  background:
+    radial-gradient(ellipse at center, #36194c 0%, #0b0911 70%);
+}
+
+.closing-symbol {
+  font-family: Orbitron;
+  font-size: 65px;
+  color: #c17aff;
+  text-shadow: 0 0 35px #c17aff;
+  margin-bottom: 25px;
+}
+
+.closing h2 {
+  font-family: Orbitron;
+  font-size: clamp(17px, 3vw, 27px);
+  letter-spacing: 3px;
+  margin: 12px;
+}
+
+.closing p {
+  color: #a597b7;
+  letter-spacing: 2px;
+  font-size: 12px;
+  margin-top: 30px;
+}
+
+footer {
+  text-align: center;
+  padding: 50px 0 20px;
+  border-top: 1px solid #39264b;
+  margin-top: 65px;
+}
+
+.footer-logo {
+  font-family: Orbitron;
+  font-size: 30px;
+  font-weight: 900;
+}
+
+.footer-logo span {
+  color: #c17aff;
+}
+
+footer p {
+  color: #a597b7;
+  letter-spacing: 3px;
+}
+
+footer small {
+  display: block;
+  font-size: 9px;
+  margin-top: 12px;
+}
+
+@media (max-width: 900px) {
+  .metrics {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .divisions {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .workflow {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 550px) {
+  .recore {
+    padding: 20px;
+  }
+
+  .divisions,
+  .workflow {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-meta {
+    gap: 15px;
+  }
+
+  .section-heading h2 {
+    font-size: 16px;
+  }
+}
+
